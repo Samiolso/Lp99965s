@@ -17,19 +17,19 @@ $secondary-color: rgb(255, 183, 0);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
-  max-width: 54rem;
-  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 .menu-items{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-size: 1.5rem;
   background-color: white;
   padding: 2rem 3rem;
   margin: 0rem auto 0.5rem auto;
   border-radius: 1rem;
+  max-width: 54rem;
 
   @media (max-width: 550px) {
    padding: 2rem 2rem;
