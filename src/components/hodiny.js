@@ -28,12 +28,12 @@ const Hodiny = ({ val }) => {
           <span className="hodiny-main__text2">11:00 - 22:00</span>
         </div>
       </div>
-      <div>
-        {openWeekHours || openWeekEndHours ? <div className="otvorene">
-          <div className="otvorene__text1">Otvorené</div>
-        </div> : <div className="otvorene">
-            <div className="otvorene__text2">Zatvorené</div>
-          </div>}
+      <div className="otvorene">
+        {openWeekHours || openWeekEndHours ?
+          <div style={{ color: "rgb(21, 226, 21)" }}>Otvorené</div>
+          :
+          <div style={{ color: "rgb(197, 16, 16)" }}>Zatvorené</div>
+        }
       </div>
       {val.some(el => el === 2) && (
         <div style={{ fontSize: "1.3rem", paddingTop: "1rem" }}>Zatvorené z technických príčin.</div>

@@ -15,7 +15,7 @@ import ArrowRight from "../images/arrow-right.svg"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Domov" />
+    <SEO title="Pizzeria Lucky" />
     <div>
       <div className="head">
         <img src={Logo} alt="logo" style={{ maxHeight: "55vh" }} />
