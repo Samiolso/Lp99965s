@@ -1,0 +1,46 @@
+$primary-color: rgb(250, 105, 50);
+$secondary-color: rgb(255, 183, 0);
+
+.map{
+
+  &__iframe{
+    width: 65vw;
+    height: 25vw;
+    border: 0;
+    border-radius: 2rem;
+
+    @media (max-width: 1000px){
+      width: 90vw;
+      height: 40vh;
+    }
+  }
+}
+
+.kontakt-text{
+  color: white;
+  font-size: 3.5rem;
+  max-width: 70vw;
+  margin: 2rem auto;
+  font-weight: 400;
+  text-align: center;
+  padding: 2rem;
+
+  &__color{
+    color: $secondary-color;
+  }
+
+  &__color2{
+    color: $primary-color;
+  }
+
+  @media (max-width: 1000px){
+    max-width: 100vw;
+    font-size: 3rem;
+  }
+
+  @media (max-width: 500px){
+    max-width: 100vw;
+    font-size: 2.5rem;
+    margin: 1rem auto;
+  }
+}
