@@ -3,19 +3,13 @@ module.exports = {
     title: `Pizzeria Lucky`,
     description: `Navštívte nás alebo si objednajte najlepšiu pizza v Petržalke.`,
     author: `pizza lucky`,
+    siteUrl: `https://pizzerialucky.sk`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
-    /* {
-      resolve: "gatsby-source-google-spreadsheets",
-      options: {
-        spreadsheetId: "1jfSWq342X-xawgsNCggz-Tig-zVokiJJ3e7O1I9AHCA",
-        credentials: require("./credentials/client_secret.json"),
-      },
-    }, */
-
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-source-google-spreadsheet",
       options: {
