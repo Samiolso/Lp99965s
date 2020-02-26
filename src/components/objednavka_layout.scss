@@ -95,6 +95,18 @@
   padding: 1rem 2rem;
   border-bottom: 2px solid black;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  //color: rgb(250, 105, 50);
+
+  &__menu{
+
+    a{
+      color: rgb(250, 105, 50);
+      font-weight: 500;
+    }
+    
+  }
 }
 
 .obj-content {

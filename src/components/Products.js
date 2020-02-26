@@ -24,7 +24,7 @@ export const Products = props => {
           item.count += 1
           setCart([...cart])
         }
-        if (item.name === "LUCKY") {
+        if (item.name === "LUCKY" || item.name === "Menu B") {
           //alert("Nezabudnite si pridať prílohy.")
           window.location = "/objednavka/prisady"
         }
@@ -37,7 +37,7 @@ export const Products = props => {
       })
     } else {
       setCart(curr => [...curr, item])
-      if (item.name === "LUCKY") {
+      if (item.name === "LUCKY" || item.name === "Menu B") {
         //alert("Nezabudnite si pridať prílohy.")
         window.location = "/objednavka/prisady"
       }

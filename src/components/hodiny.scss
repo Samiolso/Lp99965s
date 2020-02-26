@@ -1,3 +1,6 @@
+$primary-color: rgb(250, 105, 50);
+$secondary-color: rgb(255, 183, 0);
+
 .hodiny {
   position: absolute;
   top: 0;
@@ -66,8 +69,5 @@ transform: translateY(0.1rem);
   padding-right: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
-
-&__text{
-  padding-left: 0.8rem;
-}
+  color: $primary-color;
 }

@@ -15,12 +15,23 @@ const Menu = ({ data }) => (
         <div>
           <div className="datum-container" style={{ textAlign: "center", padding: "1rem", fontSize: "1.7rem", color: "white" }} ><strong>
             <span className="den">{node.den}</span>
-            <span className="datum">{node.datum}</span> </strong></div>
+            <span className="datum">{node.datum}</span> </strong>
+          </div>
 
           <div className="menu-items">
             <div className="menu-item"><strong>Polievka:</strong> {node.polievka}</div>
-            <div className="menu-item"><strong>MenuA:</strong> {node.menuA}</div>
-            <div className="menu-item"><strong>MenuB:</strong> {node.menuB}</div>
+            <div className="menu-item"><strong>Menu 1:
+            <br />
+            </strong> {node.menuA}</div>
+            <div className="menu-item"><strong>Menu 2:
+            <br />
+            </strong> {node.menuB}</div>
+            {/* <div className="menu-item"><strong>Menu A:
+              <br />
+            </strong> {node.menuC}</div>
+            <div className="menu-item"><strong>Menu B:
+            <br />
+            </strong> {node.menuD}</div> */}
           </div>
         </div>
       ))}
@@ -37,6 +48,8 @@ export const query = graphql`
         den
         menuA
         menuB
+        menuC
+        menuD
         polievka
         }
       }

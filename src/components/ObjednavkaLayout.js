@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import "typeface-raleway"
 import "./objednavka_layout.scss"
@@ -47,7 +48,12 @@ const Objednavka_Layout = ({ children, heading }) => {
             </div>
 
             <div className="obj-container">
-              <div className="obj-header">{heading}</div>
+              <div className="obj-header">
+                <div className="obj-header__heading">{heading}</div>
+                <div className="obj-header__menu">
+                  <Link to="/objednavka/obed">Obedové menu</Link>
+                </div>
+              </div>
               <div className="obj-content">{children}</div>
             </div>
 
