@@ -1,12 +1,15 @@
 import React from "react"
 import "./hodiny.scss"
 
+import DotGreen from "../images/DotGreen.svg"
+import DotRed from "../images/DotRed.svg"
+
 const Hodiny = ({ val }) => {
 
   const hours = new Date().getHours()
   const day = new Date().getDay()
 
-  const hoursWeek = (hours >= 12 && hours <= 21 && val.some(el => el === 1))
+  const hoursWeek = (hours >= 10 && hours <= 21 && val.some(el => el === 1)) // opravit na 10
   const hoursWeekEnd = (hours >= 11 && hours <= 21 && val.some(el => el === 1))
   const dayWeek = (day >= 0 && day <= 4)
   const dayWeekEnd = (day >= 5 && day <= 7)
@@ -30,9 +33,15 @@ const Hodiny = ({ val }) => {
       </div>
       <div className="otvorene">
         {openWeekHours || openWeekEndHours ?
-          <div id="text-otvorene">Otvorené</div>
+          <div style={{ display: "flex" }}>
+            <img style={{ transform: "translateY(0.1rem)" }} src={DotGreen} alt="" />
+            <span className="otvorene__text">Otvorené</span>
+          </div>
           :
-          <div id="text-zatvorene">Zatvorené</div>
+          <div style={{ display: "flex" }}>
+            <img style={{ transform: "translateY(0.1rem)" }} src={DotRed} alt="" />
+            <span className="otvorene__text">Zatvorené</span>
+          </div>
         }
       </div>
       {val.some(el => el === 2) && (

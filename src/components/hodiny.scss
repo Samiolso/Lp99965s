@@ -66,12 +66,8 @@ transform: translateY(0.1rem);
   padding-right: 1rem;
   font-size: 1.6rem;
   font-weight: bold;
-}
 
-#text-otvorene{
-  color: rgb(21, 226, 21);
+&__text{
+  padding-left: 0.8rem;
 }
-
-#text-zatvorene{
-  color: rgb(197, 16, 16);
 }
