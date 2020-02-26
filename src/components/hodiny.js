@@ -9,7 +9,7 @@ const Hodiny = ({ val }) => {
   const hours = new Date().getHours()
   const day = new Date().getDay()
 
-  const hoursWeek = (hours >= 10 && hours <= 21 && val.some(el => el === 1)) // opravit na 10
+  const hoursWeek = (hours >= 15 && hours <= 21 && val.some(el => el === 1)) // opravit na 10
   const hoursWeekEnd = (hours >= 11 && hours <= 21 && val.some(el => el === 1))
   const dayWeek = (day >= 0 && day <= 4)
   const dayWeekEnd = (day >= 5 && day <= 7)
