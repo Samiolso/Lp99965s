@@ -30,9 +30,9 @@ const Hodiny = ({ val }) => {
       </div>
       <div className="otvorene">
         {openWeekHours || openWeekEndHours ?
-          <div style={{ color: "rgb(21, 226, 21)" }}>Otvorené</div>
+          <div id="text-otvorene">Otvorené</div>
           :
-          <div style={{ color: "rgb(197, 16, 16)" }}>Zatvorené</div>
+          <div id="text-zatvorene">Zatvorené</div>
         }
       </div>
       {val.some(el => el === 2) && (
