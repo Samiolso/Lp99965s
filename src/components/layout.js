@@ -31,6 +31,7 @@ const Layout = ({ children, data }) => {
                     left: "1rem",
                     height: "5rem",
                     zIndex: 10,
+                    padding: "0.4rem"
                   }}
                 />
               </Link>
