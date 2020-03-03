@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-import { graphql } from 'gatsby'
+import { Link, graphql } from "gatsby"
 
 import "./index.scss"
 import Layout from "../components/layout"
@@ -73,7 +72,7 @@ const IndexPage = ({ data }) => (
 )
 
 export const query = graphql`
-  query Hodinky {
+  query PizzaImgAndHodinky {
     allGoogleSpreadsheetOhodiny {
       edges {
         node {

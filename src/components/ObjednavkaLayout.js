@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import "typeface-raleway"
 import "./objednavka_layout.scss"
 import { ListokNav, ListokNavBurger } from "./listokNav"
 import Layout from "./layout"
