@@ -1,7 +1,7 @@
 import React from "react"
 import "./hodiny.scss"
 
-const Hodiny = ({ val }) => {
+export const Hodiny = ({ val }) => {
 
   const hours = new Date().getHours()
   const day = new Date().getDay()
@@ -45,5 +45,3 @@ const Hodiny = ({ val }) => {
     </div>
   )
 }
-
-export default Hodiny

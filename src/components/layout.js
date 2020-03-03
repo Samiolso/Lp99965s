@@ -53,7 +53,7 @@ const Layout = ({ children, data }) => {
           buttonStyle={{ color: "#4e503b", fontSize: "1.3rem", background: "rgb(255, 183, 0)" }}
         >
           <span style={{ fontSize: "1.3rem" }}>Tento web používa cookies, používaním tejto stránky súhlasíte s podmienkami.
-          <a style={{ paddingLeft: "1rem", color: "rgb(255, 183, 0)", textDecoration: "underline" }} href="#">Viac info</a>
+         {/*  <a style={{ paddingLeft: "1rem", color: "rgb(255, 183, 0)", textDecoration: "underline" }} href="#">Viac info</a> */}
           </span>
 
         </CookieConsent>

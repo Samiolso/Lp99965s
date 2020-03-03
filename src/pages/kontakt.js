@@ -15,7 +15,7 @@ const Kontakt = () => {
       <div className="container-kontakt" style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", marginTop: "2rem" }}>
 
         <div className="kontakt-text">
-          Ak máte otázky kontaktujte nás na čísle <div className="kontakt-text__color"><strong>0948 211 266</strong></div>
+          Ak máte otázky kontaktujte nás na čísle <div className="kontakt-text__color"><strong>0950 309 099</strong></div>
         </div>
 
         <div className="map">

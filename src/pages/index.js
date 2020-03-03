@@ -7,10 +7,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Logo from "../images/logo-bigS.png"
 import "typeface-raleway-dots"
-import Hodiny from "../components/hodiny"
+import { Hodiny } from "../components/hodiny"
 
 import BurgerImg from "../images/burger.jpg"
 import PizzaImg from "../images/pizza.jpg"
+import TatarakImg from "../images/tatarak.jpg"
 import ArrowRight from "../images/arrow-right.svg"
 
 const IndexPage = ({ data }) => (
@@ -55,7 +56,7 @@ const IndexPage = ({ data }) => (
           <div className="box box__2">
             <img src={PizzaImg} alt="" /></div>
           <div className="box box__3">
-            <img src={BurgerImg} alt="" /></div>
+            <img src={TatarakImg} alt="" /></div>
 
           <Link to="/objednavka/pizza">
             <div className="box box__4">
