@@ -8,6 +8,7 @@ import Logo from "../images/logo-bigS.png"
 import "typeface-raleway-dots"
 import { Hodiny } from "../components/hodiny"
 
+
 import BurgerImg from "../images/burger.jpg"
 import PizzaImg from "../images/pizza.jpg"
 import TatarakImg from "../images/tatarak.jpg"

@@ -7,11 +7,14 @@ import { ListokNav, ListokNavBurger } from "./listokNav"
 import Layout from "./layout"
 import { CartProvider } from "./CartContext"
 import { Cart } from "./Cart"
+import HodinyValue from "./HodinyValue"
+import { HodinyAlert } from "./HodinyAlert"
 
 import ShoppingCart from "../images/shopping-cart.svg"
 import Order from "../images/clipboards.svg"
 import ArrowRight from "../images/arrow-right.svg"
 import Penazenka from "../images/penazenka.svg"
+
 
 const Objednavka_Layout = ({ children, heading }) => {
   const [sideOpen, setSideOpen] = useState(false)
@@ -19,6 +22,8 @@ const Objednavka_Layout = ({ children, heading }) => {
   return (
     <>
       <Layout>
+        <HodinyValue />
+        <HodinyAlert />
         <div className="header">
           <div className="header__text">Online objednávka</div>
         </div>
@@ -41,6 +46,7 @@ const Objednavka_Layout = ({ children, heading }) => {
 
         <CartProvider>
           <div className="content">
+
             <div className="ListokNav">
               <ListokNavBurger sideOpen={sideOpen} setSideOpen={setSideOpen} />
               <ListokNav sideOpen={sideOpen} setSideOpen={setSideOpen} />

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import { CartContext } from "./CartContext"
 import { Alert } from "./alert"
 
@@ -7,7 +7,6 @@ import Basket from "../images/cart.svg"
 
 export const Products = props => {
   const [cart, setCart] = useContext(CartContext)
-  const [display, setDisplay] = useState(false)
 
   const addToCart = () => {
     const itemInCart = cart.find(item => item.id === props.id)
@@ -52,24 +51,16 @@ export const Products = props => {
 
   const price = Number(props.price).toFixed(2)
 
-  const hours = new Date().getHours()
+  /* const hours = new Date().getHours()
   const day = new Date().getDay()
 
-  const hoursWeek = (hours >= 10 && hours <= 21)
+  const hoursWeek = (hours >= 17 && hours <= 21)
   const hoursWeekEnd = (hours >= 11 && hours <= 21)
   const dayWeek = (day >= 0 && day <= 4)
   const dayWeekEnd = (day >= 5 && day <= 7)
 
   const openWeekHours = (hoursWeek && dayWeek)
-  const openWeekEndHours = (hoursWeekEnd && dayWeekEnd)
-
-  const addToCartTime = () => {
-    if (openWeekHours || openWeekEndHours) {
-      addToCart()
-    } else {
-      setDisplay(true)
-    }
-  }
+  const openWeekEndHours = (hoursWeekEnd && dayWeekEnd) */
 
 
   return (
@@ -87,7 +78,7 @@ export const Products = props => {
         <p style={{ paddingRight: "0.5rem" }}>{price}€</p>
 
         <div className="button">
-          <button className="addButton" onClick={addToCartTime}>
+          <button className="addButton" onClick={addToCart}>
             <img className="basket" src={Basket} alt="basket" />
           </button>
 
@@ -101,9 +92,9 @@ export const Products = props => {
         </div>
       </div>
 
-      <Alert display={display} setDisplay={setDisplay}>
-        <div style={{ color: "red" }}>Je nám ľúto máme zatvorené.</div>
-      </Alert>
+      {/* {!(openWeekHours || openWeekEndHours) &&
+        <Alert />
+      } */}
     </div>
   )
 }

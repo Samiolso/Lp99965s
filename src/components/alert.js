@@ -1,14 +1,11 @@
 import React from "react";
 import "./alert.scss"
 
-export const Alert = ({ children, display, setDisplay }) => {
-  const content = display && (
-    <div className="overlay-alert">
-      <div className="alert">
-        <button className="alert-close" onClick={() => setDisplay(false)}>X</button>
-        <div className="alert-body">{children}</div>
-      </div>
+export const Alert = () =>
+  (
+    <div className="alert">
+      <div style={{ paddingBottom: "10rem" }}>
+        Je nám ľúto máme zatvorené.
+            </div>
     </div>
   )
-  return content
-}

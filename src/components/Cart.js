@@ -1,9 +1,7 @@
 import React, { useContext, useState } from "react"
-import { graphql } from 'gatsby'
 
 import { CartContext } from "./CartContext"
 import { Modal } from "./Modal"
-import { Alert } from "./alert"
 import Supermarket from "../images/supermarket.svg"
 import CartAdded from "../images/cartAdded.svg"
 
@@ -64,7 +62,7 @@ export const Cart = () => {
       <div className="kosik">
         <div className="cart-header">
           Košík
-      </div>
+          </div>
 
         <div className="cart-items">
           {cart.length > 0 ?
@@ -365,11 +363,6 @@ export const Cart = () => {
           </form>
         </div>
       </Modal>
-
-      <Alert display={display} setDisplay={setDisplay}>
-        <div style={{ color: "red" }}>Košík je prázdny</div>
-      </Alert>
-
     </div >
   )
 }
