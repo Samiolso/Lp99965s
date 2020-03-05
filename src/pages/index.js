@@ -16,7 +16,7 @@ import ArrowRight from "../images/arrow-right.svg"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Pizzeria Lucky Petržalka - objednajte si pizzu online" description="Navštívte nás alebo si objednajte najlepšiu pizzu v Petržalke. Pozrite si naše obedové menu a jedálny lístok. Lucky 7" />
+    <SEO title="Pizza Lucky" />
     <div>
       <div className="head">
         <img src={Logo} alt="logo" style={{ maxHeight: "55vh" }} />

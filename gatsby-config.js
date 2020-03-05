@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Pizza Lucky`,
-    description: `Navštívte nás alebo si objednajte najlepšiu pizzu v Petržalke. Pozrite si naše obedové menu a jedálny lístok. Lucky 7`,
+    title: `Pizzeria Lucky Petržalka - Objednajte si pizzu online`,
+    description: `Navštívte nás alebo si objednajte najlepšiu pizzu v Petržalke. Pozrite si naše obedové menu a jedálny lístok.`,
     author: `pizza lucky`,
     siteUrl: `https://pizzerialucky.sk`,
   },
