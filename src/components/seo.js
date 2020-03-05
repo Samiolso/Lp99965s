@@ -60,7 +60,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `sk`,
   meta: ["pizza lucky, pizzeria lucky, pizza, pizzka, pizzeria, pizzerka, petržalka, pizza petržalka, pizzeria petržalka, burger "],
-  description: `Navštívte nás alebo si objednajte najlepšiu pizzu v Petržalke. Pozrite si naše obedové menu a jedálny lístok. Lucky 7`,
+  description: `Navštívte nás alebo si objednajte najlepšiu pizzu v Petržalke. Pozrite si naše obedové menu a jedálny lístok. Rozvoz Petržalka a Jarovce zdarma.`,
 }
 
 SEO.propTypes = {
