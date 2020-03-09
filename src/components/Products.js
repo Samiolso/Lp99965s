@@ -1,6 +1,5 @@
 import React, { useContext } from "react"
 import { CartContext } from "./CartContext"
-import { Alert } from "./alert"
 
 import "./Products.scss"
 import Basket from "../images/cart.svg"
@@ -79,10 +78,6 @@ export const Products = props => {
               }))}</div>
         </div>
       </div>
-
-      {/* {!(openWeekHours || openWeekEndHours) &&
-        <Alert />
-      } */}
     </div>
   )
 }

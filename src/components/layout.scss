@@ -23,7 +23,7 @@ body {
 }
 
 ::-webkit-scrollbar{
-  width: 5px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -91,6 +91,7 @@ button{
 
 button,
 input,
+input[type=submit],
 optgroup,
 select,
 textarea {

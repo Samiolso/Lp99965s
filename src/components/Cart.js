@@ -10,7 +10,7 @@ import "./Cart.scss"
 export const Cart = () => {
   const [cart, setCart] = useContext(CartContext)
   const [show, setShow] = useState(false)
-  const [display, setDisplay] = useState(false)
+  const [, setDisplay] = useState(false)
 
   const [dovoz, setDovoz] = useState("Dovoz")
   const [cast, setCast] = useState("Petržalka/Jarovce")
@@ -42,6 +42,7 @@ export const Cart = () => {
   const textArea = area.join(", ").toString()
 
   const removeLocal = () => {
+
     if (typeof window !== "undefined") {
       localStorage.removeItem("cart")
       window.location = "/dakujeme"
@@ -347,11 +348,11 @@ export const Cart = () => {
 
             <div className="modal-footer">
               <input
-                /* onClick={() => {
+                onClick={() => {
                   if (textArea === "") {
-                    alert("Košík je prázdny ")
+                    alert("Prázdny košík")
                   }
-                }} */
+                }}
                 className="modal-footer__button"
                 type="submit"
                 value="Objednať"
