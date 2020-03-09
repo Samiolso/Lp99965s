@@ -41,9 +41,9 @@ const IndexPage = ({ data }) => (
 
       <div className="container1">
         <div className="akcie">
-          <div className="akcia">Od 15:00 do 18:00 pizza za 4€</div>
-          <div className="akcia">Nad 20€ dva litre nealka zdarma</div>
-          <div className="akcia">Petržalka a Jarovce zdarma</div>
+          <div className="akcia">Pri objednávke</div>
+          <div className="akcia"> nad 20€ dva litre nealka zdarma</div>
+          <div className="akcia">rozvoz Petržalka a Jarovce zdarma</div>
           <div className="akcia">3 + 1 PIZZA zdarma</div>
         </div>
         <div className="akcia-text">Akcie</div>

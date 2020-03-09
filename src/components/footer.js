@@ -1,8 +1,10 @@
 import React from "react"
+import "./footer.scss"
+
 import Logo from "../images/logo-footer.png"
 import Penazenka from "../images/penazenka.svg"
 import Listky from "../images/listky.svg"
-import "./footer.scss"
+import Alergeny from "../../static/alergeny.pdf"
 
 export const Footer = () => (
   <div className="footer">
@@ -36,7 +38,7 @@ export const Footer = () => (
 
           <div className="box-main__text">
             <span className="box-main__text2">10:00 - 22:00</span>
-            <span className="box-main__text2">11:00 - 22:00</span>
+            <span className="box-main__text2">10:00 - 22:00</span>
           </div>
         </div>
       </div>
@@ -68,7 +70,7 @@ export const Footer = () => (
 
     <div className="footer-bottom">
       <div className="footer-bottom__alergeny">
-        <a href="/alergeny.pdf" target="_blank">
+        <a href={Alergeny} target="_blank" >
           Alergény
         </a>
       </div>

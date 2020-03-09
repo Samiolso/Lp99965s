@@ -6,11 +6,11 @@ import { Products } from "../../components/Products"
 import SEO from "../../components/seo"
 
 
-const Predjedla = ({ data }) => (
-  <ObjednavkaLayout heading="Predjedlá">
-    <SEO title="Online objednávka Predjedla" />
+const Wok = ({ data }) => (
+  <ObjednavkaLayout heading="Rizotá">
+    <SEO title="Online objednávka Wok" />
 
-    {data.allGoogleSpreadsheetPredjedla.edges.map(({ node }) => (
+    {data.allGoogleSpreadsheetWok.edges.map(({ node }) => (
       <Products
         name={node.nazov}
         price={node.cena}
@@ -25,8 +25,8 @@ const Predjedla = ({ data }) => (
 )
 
 export const query = graphql`
-  query Predjedla {
-    allGoogleSpreadsheetPredjedla {
+  query Wok {
+    allGoogleSpreadsheetWok {
       edges {
         node {
           cena
@@ -40,4 +40,4 @@ export const query = graphql`
   }
 `
 
-export default Predjedla
+export default Wok
