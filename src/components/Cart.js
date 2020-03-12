@@ -21,7 +21,7 @@ export const Cart = () => {
   const [poznamky, setPoznamky] = useState("")
   const [submitted, setSubmitted] = useState(false)
 
-  const price = cart.reduce((acc, curr) => acc + curr.price * curr.count, 0)
+  const price = cart.reduce((acc, curr) => acc + curr.price * curr.count * 0.95, 0)
   const totalPrice = price.toFixed(2)
 
   const priceIne = cart.reduce((acc, curr) => acc + curr.price * curr.count, 2)
@@ -109,7 +109,6 @@ export const Cart = () => {
               </div>
             )) : "Váš košík je prázdny"}
         </div>
-        <br />
         <br />
         <div className="bottom">
           <div className="price">Cena spolu: {totalPrice} € </div>
@@ -345,6 +344,8 @@ export const Cart = () => {
                 required
               />
             </div>
+
+            <div>Uplatnená zľava 5%.</div>
 
             <div className="modal-footer">
               <input

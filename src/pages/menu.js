@@ -22,16 +22,26 @@ const Menu = ({ data }) => (
             <div className="menu-item"><strong>Polievka:</strong> {node.polievka}</div>
             <div className="menu-item"><strong>Menu 1:
             <br />
-            </strong> {node.menuA}</div>
+            </strong> {node.menu1}</div>
             <div className="menu-item"><strong>Menu 2:
             <br />
-            </strong> {node.menuB}</div>
-            {/* <div className="menu-item"><strong>Menu A:
+            </strong> {node.menu2}</div>
+            <div className="menu-item">
+              {node.menu3 !== null &&
+                <div>
+                  <strong>Menu 3:
               <br />
-            </strong> {node.menuC}</div>
+                  </strong> {node.menu3}
+                </div>
+              }
+            </div>
+            <div className="menu-item"><strong>Menu A:
+            <br />
+            </strong> {node.menuA}</div>
             <div className="menu-item"><strong>Menu B:
             <br />
-            </strong> {node.menuD}</div> */}
+            </strong> {node.menuB}</div>
+
           </div>
         </div>
       ))}
@@ -46,10 +56,11 @@ export const query = graphql`
         node {
         datum(formatString: "D.M")
         den
+        menu1
+        menu2
+        menu3
         menuA
         menuB
-        menuC
-        menuD
         polievka
         }
       }

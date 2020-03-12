@@ -145,7 +145,6 @@ export const ListokNav = ({ sideOpen, setSideOpen }) => {
       <Link to="/objednavka/burger" activeClassName="activeS">Burger</Link>
       <Link to="/objednavka/kuracie" activeClassName="activeS">Kuracie mäso</Link>
       <Link to="/objednavka/bravcove" activeClassName="activeS">Bravčové mäso</Link>
-      <Link to="/objednavka/hovadzie" activeClassName="activeS">Hovädzie mäso</Link>
       <Link to="/objednavka/bezmasite" activeClassName="activeS">Bezmäsité</Link>
       <Link to="/objednavka/cestoviny" activeClassName="activeS">Cestoviny</Link>
       <Link to="/objednavka/salaty" activeClassName="activeS">Šaláty</Link>
