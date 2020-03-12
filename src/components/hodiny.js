@@ -35,6 +35,14 @@ export const Hodiny = ({ val }) => {
       {val.some(el => el === 2) && (
         <div style={{ fontSize: "1.3rem", paddingTop: "1rem" }}>Zatvorené z technických príčin.</div>
       )}
+
+      {val.some(el => el === 3) && (
+        <div style={{ fontSize: "1.3rem", paddingTop: "1rem" }}>Dnes je sviatok máme zatvorené.</div>
+      )}
+
+      {val.some(el => el === 4) && (
+        <div style={{ fontSize: "1.3rem", paddingTop: "1rem" }}>Dovolenkové obdobie máme zatvorené.</div>
+      )}
     </div>
   )
 }
