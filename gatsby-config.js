@@ -2,6 +2,8 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+const privateKey = process.env.GATSBY_PRIVATE_KEY.replace(new RegExp('\\\\n', '\g'), '\n')
+
 
 module.exports = {
   siteMetadata: {
@@ -29,8 +31,8 @@ module.exports = {
         spreadsheetName: "",
         typePrefix: "GoogleSpreadsheet",
         credentials: {
-          client_email: `${process.env.GATSBY_CLIENT_EMAIL}`,
-          private_key: `${process.env.GATSBY_PRIVATE_KEY}`
+          client_email: process.env.GATSBY_CLIENT_EMAIL,
+          private_key: privateKey
         },
       }
     },
