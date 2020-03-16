@@ -1,11 +1,6 @@
-const dotenv = require('dotenv');
-
-dotenv.config({
-  path: `.env.${process.env.NODE_ENV}`
-});
-
-const credentialss = `{"private_key": ${process.env.PRIVATE_KEY},
-  "client_email": ${process.env.CLIENT_EMAIL}}`
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 
 module.exports = {
@@ -34,9 +29,10 @@ module.exports = {
         spreadsheetId: "1FfMKhOm_qI7Av3Vhm4FO6tIetn2HjoLDrPTleLyuDec",
         spreadsheetName: "",
         typePrefix: "GoogleSpreadsheet",
-        credentials: JSON.parse(credentialss),
-        filterNode: () => true,
-        mapNode: node => node
+        credentials: {
+          client_email: process.env.CLIENT_EMAIL,
+          private_key: process.env.PRIVATE_KEY
+        },
       }
     },
 
