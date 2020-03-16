@@ -4,6 +4,8 @@ dotenv.config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
+const credentialss = `${process.env.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS}`
+
 module.exports = {
   siteMetadata: {
     title: `Pizzeria Lucky Petržalka - Objednajte si pizzu online`,
@@ -30,7 +32,7 @@ module.exports = {
         spreadsheetId: "1FfMKhOm_qI7Av3Vhm4FO6tIetn2HjoLDrPTleLyuDec",
         spreadsheetName: "",
         typePrefix: "GoogleSpreadsheet",
-        credentials: JSON.parse(`${process.env.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS}`),
+        credentials: JSON.parse(credentialss),
         filterNode: () => true,
         mapNode: node => node
       }
