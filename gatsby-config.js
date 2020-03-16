@@ -4,7 +4,9 @@ dotenv.config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
-const credentialss = `${process.env.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS}`
+const credentialss = `{"private_key": ${process.env.PRIVATE_KEY},
+  "client_email": ${process.env.CLIENT_EMAIL}}`
+
 
 module.exports = {
   siteMetadata: {
