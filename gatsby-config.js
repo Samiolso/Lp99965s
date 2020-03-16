@@ -29,8 +29,8 @@ module.exports = {
         spreadsheetName: "",
         typePrefix: "GoogleSpreadsheet",
         credentials: {
-          client_email: process.env.GATSBY_CLIENT_EMAIL,
-          private_key: process.env.GATSBY_PRIVATE_KEY
+          client_email: `${process.env.GATSBY_CLIENT_EMAIL}`,
+          private_key: `${process.env.GATSBY_PRIVATE_KEY}`
         },
       }
     },
