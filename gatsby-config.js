@@ -18,7 +18,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-159174866-1",
         head: true
       },
@@ -30,8 +29,8 @@ module.exports = {
         spreadsheetName: "",
         typePrefix: "GoogleSpreadsheet",
         credentials: {
-          client_email: process.env.CLIENT_EMAIL,
-          private_key: process.env.PRIVATE_KEY
+          client_email: process.env.GATSBY_CLIENT_EMAIL,
+          private_key: process.env.GATSBY_PRIVATE_KEY
         },
       }
     },
