@@ -24,7 +24,7 @@ module.exports = {
         spreadsheetId: "1FfMKhOm_qI7Av3Vhm4FO6tIetn2HjoLDrPTleLyuDec",
         spreadsheetName: "",
         typePrefix: "GoogleSpreadsheet",
-        credentials: require("./credentials/client_secret.json"),
+        credentials: JSON.parse(GATSBY_GOOGLE_SERVICE_ACCOUNT_CREDENTIALS),
         filterNode: () => true,
         mapNode: node => node
       }
