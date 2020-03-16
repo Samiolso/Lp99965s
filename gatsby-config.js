@@ -30,7 +30,7 @@ module.exports = {
         spreadsheetId: "1FfMKhOm_qI7Av3Vhm4FO6tIetn2HjoLDrPTleLyuDec",
         spreadsheetName: "",
         typePrefix: "GoogleSpreadsheet",
-        credentials: JSON.parse(GATSBY_GOOGLE_SERVICE_ACCOUNT_CREDENTIALS),
+        credentials: JSON.parse(process.env.GATSBY_GOOGLE_SERVICE_ACCOUNT_CREDENTIALS),
         filterNode: () => true,
         mapNode: node => node
       }
