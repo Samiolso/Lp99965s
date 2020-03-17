@@ -189,7 +189,7 @@ export const Cart = () => {
             method="POST"
             target="hidden_iframe"
             id="myForm"
-            onSubmit={() => hoursWeek && setSubmitted(true)}
+            onSubmit={() => setSubmitted(true)}
           >
             <br />
 
