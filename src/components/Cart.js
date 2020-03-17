@@ -21,6 +21,9 @@ export const Cart = () => {
   const [poznamky, setPoznamky] = useState("")
   const [submitted, setSubmitted] = useState(false)
 
+  const hours = new Date().getHours()
+  const hoursWeek = (hours >= 10 && hours <= 21)
+
   const price = cart.reduce((acc, curr) => acc + curr.price * curr.count * 0.95, 0)
   const totalPrice = price.toFixed(2)
 
@@ -186,7 +189,7 @@ export const Cart = () => {
             method="POST"
             target="hidden_iframe"
             id="myForm"
-            onSubmit={() => setSubmitted(true)}
+            onSubmit={() => hoursWeek && setSubmitted(true)}
           >
             <br />
 
@@ -343,6 +346,13 @@ export const Cart = () => {
                 value={textArea}
                 required
               />
+            </div>
+
+            <div style={{display:"none"}} className="input-flex">
+              <div className="input-header">Cena</div>
+              <input className="input" name="entry.1224181243" type="text" id="cislo"
+                value={totalPrice}
+                readonly />
             </div>
 
             <div>Uplatnená zľava 5%.</div>
