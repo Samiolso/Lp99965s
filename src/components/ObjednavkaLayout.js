@@ -8,7 +8,7 @@ import Layout from "./layout"
 import { CartProvider } from "./CartContext"
 import { Cart } from "./Cart"
 import HodinyValue from "./HodinyValue"
-import { HodinyAlert } from "./HodinyAlert"
+//import { HodinyAlert } from "./HodinyAlert"
 
 import ShoppingCart from "../images/shopping-cart.svg"
 import Order from "../images/clipboards.svg"
@@ -23,7 +23,7 @@ const Objednavka_Layout = ({ children, heading }) => {
     <>
       <Layout>
         <HodinyValue />
-        <HodinyAlert />
+        {/*<HodinyAlert />*/}
         <div className="header">
           <div className="header__text">Online objednávka</div>
         </div>

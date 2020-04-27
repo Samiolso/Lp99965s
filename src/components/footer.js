@@ -17,13 +17,13 @@ export const Footer = () => (
           <div className="box-main__text">
             <div className="box-main__text1">Adresa:</div>
             <div className="box-main__text1">Telefón:</div>
-            <div className="box-main__text1">Email:</div>
+            <div className="box-main__text1"></div>
           </div>
 
           <div className="box-main__text">
             <span className="box-main__text2">Vigľašska 7, Bratislava</span>
             <span className="box-main__text2">0950 309 099</span>
-            <span className="box-main__text2">pizzalucky@gmail.com</span>
+            <span className="box-main__text2"></span>
           </div>
         </div>
       </div>
@@ -32,13 +32,15 @@ export const Footer = () => (
         <div className="box-header">Otváracie hodiny</div>
         <div className="box-main">
           <div className="box-main__text">
-            <div className="box-main__text1">Po-Pi:</div>
-            <div className="box-main__text1">So-Ne:</div>
+            <div className="box-main__text1">Po-Št:</div>
+            <div className="box-main__text1">Pi-So:</div>
+            <div className="box-main__text1">Ne:</div>
           </div>
 
           <div className="box-main__text">
-            <span className="box-main__text2">10:00 - 22:00</span>
-            <span className="box-main__text2">10:00 - 22:00</span>
+            <span className="box-main__text2">10:00 - 21:45</span>
+            <span className="box-main__text2">10:00 - 22:45</span>
+            <span className="box-main__text2">10:00 - 20:00</span>
           </div>
         </div>
       </div>
